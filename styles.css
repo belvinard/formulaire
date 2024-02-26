@@ -1,0 +1,254 @@
+/* Link import family */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&family=Nunito+Sans:ital,opsz,wght@0,6..12,300;0,6..12,400;0,6..12,600;0,6..12,800;0,6..12,900;1,6..12,400&family=Roboto:wght@300;500;700;900&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+
+/* root to color */
+:root{
+    --color: rgb(31, 159, 221);
+    --complementary-color: #DD5D1F;
+    --nav-ul-li-a: #F0F8FF;
+    --colo-text: #222222;
+    --news-h1: #0E0E0E;
+    --body: #ffffff;
+    --bg-news: #F9F8F7;
+    --desc-news: #495A63;
+    --bg-resultSearch: #1f9fdd;
+    --bg-hero: linear-gradient(to right, #1f9ddd, #aad4eb, #1f9ddd);
+    --bg-color1: #26474E;
+    --bg-color2: #082BCB;
+    --bg-color3: #C3A83C;
+    --bg-color4: #225B7C;
+   
+}
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*text-transform: capitalize;*/
+    transition: all .2s linear;
+    text-decoration: none;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+body{
+    overflow-x: hidden;
+    background: var(--body);
+   
+}
+
+/* css partie invisible */
+
+.substittle{
+    padding-top: 1rem;
+    font-size: 2rem;
+    color: var(--complementary-color);
+}
+
+.spanEmojolis{
+    font-size: 2rem;
+    margin-right: .5rem;
+    font-weight: bold;
+}
+
+.btn{
+    display: inline-block;
+    border-radius: 5rem;
+    background: var(--color);
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.7rem;
+    box-shadow: 0 .4rem .9rem rgba(0, 0, 0, .5);
+    padding-left: 1rem;
+    margin-top: 1rem;
+    padding: .5rem;
+    padding-left: 1rem;
+    outline: none;
+    border: none;
+}
+
+.btn:hover{
+    letter-spacing: .1rem;
+    opacity: .7;
+    color: var(--color);
+    background: var(--nav-ul-li-a);
+    border: 1px solid var(--color);
+}
+
+
+.btn span{
+    padding: .7rem 1rem;
+    border-radius: .5rem;
+    background: var(--nav-ul-li-a);
+    color: var(--color);
+    margin-left: .5rem;
+    text-align: center;
+}
+
+.btn:hover span{
+    color: var(--nav-ul-li-a);
+    background-color: var(--color);
+    margin-left: 1rem;
+}
+
+/*  =================================  newsletter section starts  =================================  */
+.news{
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 9%;
+    max-width: 95vw;
+    margin: 4rem auto;
+    box-shadow: 0px 0px 10px var(--color);
+    background-color:  var(--bg-news);
+    padding: 1rem 0;
+
+}
+
+.horizontal-line {
+    width: 25%;
+    height: 2px;
+    border: none;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background-color: var(--complementary-color);
+    
+    
+}
+
+.news .news-title{
+    position: relative;
+    font-size: 2.5rem;
+    color: var(--complementary-color);
+    
+}
+
+.news .news-title:hover{
+    color: #0E0E0E;
+}
+
+.news .news-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+    margin:0 auto;
+}
+
+.news .news-content .news-desc{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.news .news-content .news-desc h2{
+    font-size: 2rem;
+    color:  var(--news-h1);
+    font-weight: bold;
+
+}
+
+.news .news-content .news-desc p{
+    font-size: 1.5rem;
+    color:   #495A63;
+    margin-top: 1.5rem;
+}
+
+.news .news-suscribe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    
+}
+
+.news .news-suscribe h1{
+    font-size: 2.5rem;
+    color:  var(--news-h1);
+    margin-bottom: 2rem;
+
+}
+
+.news .news-suscribe h1:hover,
+.news .news-content .news-desc h2:hover{
+    color: var(--complementary-color);
+}
+
+.news .news-suscribe ::placeholder{
+    color: var(--desc-news);
+}
+.news .news-suscribe form{
+    border-radius: 5rem;
+    border: 0.2rem solid var(--complementary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 50rem;
+}
+
+.news .news-suscribe form .email{
+    background: transparent;
+    text-transform: none;
+    font-size: 1.6rem;
+    color: #495A63;
+    padding: 0 1.3rem;
+    border: 1px solid transparent;
+    width: 100%;
+}
+
+.news .news-suscribe form .btnewsletter{
+    width: auto;
+    display: inline-block;
+    border: 0.1rem solid #495A63;
+    cursor: pointer;
+    background: var(--color);
+    font-size: 1.7rem;
+    padding: .7rem 1rem;
+    border-radius: 5rem;
+    color: white;
+    margin: .5rem .3rem;
+}
+
+.news .news-suscribe form .btnewsletter:hover {
+    background: none;
+    color: #10221b;
+}
+
+.news .news-suscribe form .btnewsletter:hover {
+    background: none;
+    color: #495A63;
+}
+
+.email:focus {
+    border: none;
+    outline: none;
+    /* Ajoutez d'autres styles au besoin */
+}
+
+
+@media only screen and (max-width: 768px){
+    .news .news-content{
+        grid-template-columns: 1fr
+    }
+}
+
+@media only screen and (max-width: 360px){
+
+    .horizontal-line{
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+}
+/*  =================================  newsletter section ends  =================================  */
